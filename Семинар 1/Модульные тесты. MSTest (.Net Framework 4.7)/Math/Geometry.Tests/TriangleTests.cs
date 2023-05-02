@@ -20,8 +20,7 @@ namespace Geometry.Tests
         }
         [TestMethod]
         [DataRow(1, 2, 3)]
-        [DataRow(3, 4, 4)]
-        [DataRow(1, 1, 1)]
+        [DataRow(3, 4, 8)]
         public void CreateWrong(float a, float b, float c)
         {
             Assert.ThrowsException<UnexistingException>(() =>
